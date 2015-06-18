@@ -25,7 +25,7 @@ func main() {
 		parser := tl.NewParser(bytes.NewReader(line))
 		parser.Trace = true
 
-		parser.ParseProgram()
+		parser.Parse()
 
 		if err := parser.Err(); err != nil {
 			log.Fatal(err)
